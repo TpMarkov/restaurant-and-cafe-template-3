@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="800" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E7B7B"/>
+      <stop offset="60%" stop-color="#06283D"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency="0.8" numOctaves="1" stitchTiles="stitch"/></filter>
+  </defs>
+  <rect width="1600" height="800" fill="url(#g1)" />
+  <g opacity="0.12" fill="#000">
+    <ellipse cx="400" cy="620" rx="900" ry="160"/>
+  </g>
+  <g transform="translate(60,140) scale(1.05)" fill="#fff" opacity="0.06">
+    <rect x="0" y="0" width="1480" height="520" rx="28"/>
+  </g>
+  <text x="80" y="200" font-family="Sora, Arial, sans-serif" font-size="44" fill="#fff" opacity="0.95">Ambience — Wide cinematic shot</text>
+  <text x="80" y="260" font-family="Sora, Arial, sans-serif" font-size="20" fill="#fff" opacity="0.85">Wide framing, moody lighting. Replace with high-quality landscape photo.</text>
+  <g transform="translate(80,340)">
+    <rect width="720" height="360" rx="12" fill="#000" opacity="0.08"/>
+    <text x="24" y="46" font-family="Playfair Display, serif" font-size="28" fill="#fff">Placeholder image — ambience-wide.jpg</text>
+  </g>
+</svg>

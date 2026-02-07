@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6C89F"/>
+      <stop offset="100%" stop-color="#F7F3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g2)" />
+  <g transform="translate(80,120)" fill="#0E7B7B" opacity="0.12">
+    <rect x="0" y="0" width="1040" height="640" rx="20"/>
+  </g>
+  <text x="80" y="180" font-family="Sora, Arial, sans-serif" font-size="36" fill="#06283D">Terrace — Outdoor evening</text>
+  <text x="80" y="220" font-family="Sora, Arial, sans-serif" font-size="16" fill="#06283D" opacity="0.85">Warm, natural light; different composition from original. Replace with terrace photo.</text>
+  <g transform="translate(80,280)">
+    <circle cx="80" cy="80" r="70" fill="#06283D" opacity="0.08"/>
+    <rect x="180" y="30" width="640" height="400" rx="14" fill="#06283D" opacity="0.06"/>
+    <text x="24" y="46" font-family="Playfair Display, serif" font-size="22" fill="#06283D">Placeholder — terrace.jpg</text>
+  </g>
+</svg>
