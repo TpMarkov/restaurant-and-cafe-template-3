@@ -1,4 +1,4 @@
-/* New font pairing and base tokens for the redesigned template */
+/* Fresh global styles and tokens for the restarted project */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap');
 
 @tailwind base;
@@ -6,91 +6,27 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        scroll-behavior: smooth;
-        font-family: 'Sora', sans-serif;
-        color: theme('colors.brand-ink');
-    }
-
-    body {
-        @apply bg-brand-sand text-brand-ink antialiased;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Playfair Display', serif;
-    }
+  html { scroll-behavior: smooth; font-family: 'Sora', sans-serif; }
+  body { @apply bg-brand-sand text-brand-ink antialiased; }
+  h1,h2,h3,h4 { font-family: 'Playfair Display', serif; }
 }
 
 @layer components {
-    .btn-primary {
-        @apply inline-block px-6 py-3 bg-brand-ink text-brand-cream font-semibold tracking-wide rounded shadow-soft-lg transition-transform duration-200 ease-out hover:-translate-y-1;
-    }
-
-    .btn-ghost {
-        @apply inline-block px-6 py-3 border border-brand-muted text-brand-ink font-medium tracking-wide rounded-md bg-transparent transition-colors duration-200;
-    }
-
-    .section-title {
-        @apply text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-ink mb-3;
-    }
-
-    .section-subtitle {
-        @apply text-sm md:text-base text-brand-emerald font-medium uppercase tracking-wide mb-6;
-    }
-
-    .section-container {
-        @apply max-w-6xl mx-auto px-5 sm:px-6 lg:px-8;
-    }
-
-    .text-accent {
-        @apply text-brand-coral;
-    }
+  .btn-primary { @apply inline-block px-6 py-3 bg-brand-emerald text-white font-semibold tracking-wide rounded shadow-soft-lg transition-transform duration-200 ease-out hover:-translate-y-1; }
+  .btn-ghost { @apply inline-block px-6 py-3 border border-brand-muted text-brand-ink font-medium tracking-wide rounded-md bg-transparent transition-colors duration-200; }
+  .section-title { @apply text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-ink mb-3; }
+  .section-subtitle { @apply text-sm md:text-base text-brand-emerald font-medium uppercase tracking-wide mb-6; }
+  .section-container { @apply max-w-6xl mx-auto px-5 sm:px-6 lg:px-8; }
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
-
-    .reveal-text {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .word-reveal {
-        display: inline-block;
-        transform: translateY(100%);
-    }
+  .reveal { will-change: transform, opacity; }
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
-}
+/* Smooth anchor offset */
+html { scroll-padding-top: 72px; }
 
-::-webkit-scrollbar-track {
-    @apply bg-brand-sand;
-}
-
-::-webkit-scrollbar-thumb {
-    @apply bg-brand-muted rounded-full;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    @apply bg-brand-ink;
-}
-
-/* Smooth scrolling for anchor links */
-html {
-    scroll-padding-top: 72px;
-}
-
-/* Notes:
- - Replace placeholder images in /public with your own high-quality landscape/ambience photography.
- - Image files recommended: ambience-wide.jpg, terrace.jpg, food-wide.jpg, chef-portrait.jpg
- - Keep compositions different from original: prefer wide ambience shots, moody lighting or cinematic color grading.
+/* Implementation notes for images:
+ - Do NOT reuse original template images. Add new files under /public and update references in components.
+ - Recommended filenames: ambience-wide.jpg, terrace.jpg, chef.jpg, menu-hero.jpg
  */
