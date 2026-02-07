@@ -13,6 +13,10 @@ const nextConfig = {
         hostname: "source.unsplash.com",
       },
     ],
+    // Disable Next.js image optimization for remote images during build/deploy.
+    // This avoids Vercel/infra attempting to fetch and optimize remote images
+    // at build time which can lead to 404/503 errors for some hosts.
+    unoptimized: true,
   },
 };
 
